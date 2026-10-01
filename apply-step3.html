@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สมัครเรียน - ข้อมูลการศึกษา | KMUTNB ปราจีนบุรี</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="หน้าแรก KMUTNB">
+        <img class="brand-logo" src="assets/icons/logo.png" alt="KMUTNB">
+      </a>
+      <nav class="top-nav">
+        <a href="index.html">หน้าแรก</a><a href="programs.html">หลักสูตร</a><a href="notifications.html" class="current">ใบสมัครของฉัน</a><a href="contact.html">ติดต่อเรา</a>
+      </nav>
+      <div class="top-actions">
+        <a href="favorites.html" class="top-action" title="รายการที่สนใจ">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="#fff" aria-hidden="true"><path d="M6 2h12a1 1 0 0 1 1 1v18.2a.8.8 0 0 1-1.24.67L12 17.5l-5.76 4.37A.8.8 0 0 1 5 21.2V3a1 1 0 0 1 1-1z"/></svg>
+          
+          <span class="lbl">รายการที่สนใจ</span>
+        </a>
+        <a href="notifications.html" class="top-action" title="การแจ้งเตือน">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="#fff" aria-hidden="true"><path d="M12 2a6 6 0 0 0-6 6v3.1c0 .56-.22 1.1-.62 1.5L4 14v1h16v-1l-1.38-1.4a2.12 2.12 0 0 1-.62-1.5V8a6 6 0 0 0-6-6zm0 20a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22z"/></svg>
+          
+          <span class="lbl">การแจ้งเตือน</span>
+        </a>
+        
+      <div class="user-chip" style="cursor:default;">
+        <img src="assets/icons/avatar.jpg" alt="">
+        <span class="lbl">สมชาย ใจดี</span>
+      </div>
+      <a href="index.html" class="btn btn-ghost-orange" style="padding:7px 16px;font-size:12.5px;">ออกจากระบบ</a>
+      </div>
+    </div>
+  </header>
+<main>
+  <div class="form-shell" style="padding-bottom:0;">
+    <h1 class="apply-title">สมัครเรียน</h1>
+    <div class="program-chip"><span class="chip-code">INE</span><span>สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INE) หลักสูตรส่งเสริมภาษาอังกฤษ</span></div>
+  </div>
+  <div class="wizard-steps">
+      <div class="wizard-step done">
+        <div class="dot">&#10003;</div>
+        <span>ข้อมูลส่วนตัว</span>
+      </div>
+      <div class="wizard-step done">
+        <div class="dot">&#10003;</div>
+        <span>ช่องทางการติดต่อ</span>
+      </div>
+      <div class="wizard-step active">
+        <div class="dot">3</div>
+        <span>ข้อมูลการศึกษา</span>
+      </div>
+      <div class="wizard-step ">
+        <div class="dot">4</div>
+        <span>สมัครเข้าศึกษา</span>
+      </div>
+    </div>
+    <div class="wizard-bar"></div>
+  <div class="form-shell">
+    <div class="form-panel step-panel">
+      <h2 class="panel-heading">ข้อมูลการศึกษา</h2>
+      <p class="panel-subtext">ระดับการศึกษา ผลการเรียน และความสามารถพิเศษ (ถ้ามี)</p>
+      <h3 style="margin-bottom:14px;">ระดับการศึกษา</h3>
+      <div class="f-radio-row" style="margin-bottom:16px;">
+        <label><input type="radio" name="edu_state" checked> สำเร็จการศึกษาแล้ว</label>
+        <label><input type="radio" name="edu_state"> ปัจจุบันศึกษาอยู่</label>
+      </div>
+      <div class="form-grid">
+        <div class="f-group"><label>ระดับการศึกษา</label>
+          <select><option>มัธยมศึกษาตอนปลาย</option><option>ประกาศนียบัตรวิชาชีพ (ปวช.)</option><option>ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</option></select></div>
+        <div class="f-group"><label>ประเทศ</label><select><option>ไทย</option><option>อื่น ๆ</option></select></div>
+        <div class="f-group"><label>ชื่อสถานศึกษา</label><input type="text"></div>
+        <div class="f-group"><label>สาขาวิชา/แผนการเรียน</label><input type="text"></div>
+        <div class="f-group"><label>วันที่สำเร็จการศึกษา</label><input type="date"></div>
+        <div class="f-group"><label>ผลการเรียนเฉลี่ยสะสม (GPAX)</label><input type="number" step="0.01" min="0" max="4"></div>
+      </div>
+
+      <div class="upload-box">
+        <label style="font-size:13px;font-weight:700;display:block;margin-bottom:6px;">สำเนาใบรายงานผลการศึกษา (Transcript) <span class="req">*</span></label>
+        <label class="upload-drop" for="e_transcript_file">
+          <img src="assets/icons/upload.png" alt="">
+          <div class="upload-row"><span class="btn btn-outline">อัปโหลด</span><span class="upload-hint">อัปโหลดไม่เกิน 10 MB</span></div>
+        </label>
+        <input type="file" id="e_transcript_file" style="display:none;">
+      </div>
+
+      <div class="divider-line"></div>
+      <h3 style="margin-bottom:14px;">คะแนนสอบวัดระดับภาษา</h3>
+      <div class="form-grid">
+        <div class="f-group"><label>ประเภทคะแนนสอบวัดระดับภาษา</label>
+          <select><option value="">ไม่มี</option><option>TOEIC</option><option>IELTS</option><option>TOEFL</option><option>อื่น ๆ</option></select></div>
+        <div class="f-group"><label>ผลคะแนน</label><input type="text"></div>
+        <div class="f-group"><label>วันที่สอบ</label><input type="date"></div>
+      </div>
+      <div class="upload-box">
+        <label style="font-size:13px;font-weight:700;display:block;margin-bottom:6px;">เอกสารแสดงผลการสอบวัดระดับภาษา</label>
+        <label class="upload-drop" for="l_file">
+          <img src="assets/icons/upload.png" alt="">
+          <div class="upload-row"><span class="btn btn-outline">อัปโหลด</span><span class="upload-hint">อัปโหลดไม่เกิน 10 MB</span></div>
+        </label>
+        <input type="file" id="l_file" style="display:none;">
+      </div>
+
+      <div class="divider-line"></div>
+      <h3 style="margin-bottom:14px;">ข้อมูลความสามารถพิเศษ</h3>
+      <div class="form-grid">
+        <div class="f-group"><label>ด้านความสามารถ</label>
+          <select><option value="">ไม่มี</option><option>ดนตรี</option><option>กีฬา</option><option>ศิลปะ</option><option>วิชาการ/ประกวดแข่งขัน</option><option>อื่น ๆ</option></select></div>
+        <div class="f-group"><label>รายละเอียดความสามารถพิเศษ</label><input type="text"></div>
+        <div class="f-group full"><label>ลิงก์ URL แสดงข้อมูลผ่านช่องทางออนไลน์</label><input type="text" placeholder="https://"></div>
+      </div>
+      <div class="upload-box">
+        <label style="font-size:13px;font-weight:700;display:block;margin-bottom:6px;">อัปโหลดไฟล์</label>
+        <label class="upload-drop" for="s_file">
+          <img src="assets/icons/upload.png" alt="">
+          <div class="upload-row"><span class="btn btn-outline">อัปโหลด</span><span class="upload-hint">อัปโหลดไม่เกิน 10 MB</span></div>
+        </label>
+        <input type="file" id="s_file" style="display:none;">
+      </div>
+      <div class="f-group" style="margin-top:14px;">
+        <label>หมายเหตุ</label>
+        <textarea></textarea>
+      </div>
+    </div>
+    <div class="dotted-divider"></div>
+    <div class="form-actions">
+      <a href="apply-step2.html" class="btn btn-outline">&larr; ย้อนกลับ: ช่องทางการติดต่อ</a>
+      <div style="display:flex;gap:12px;">
+        <a href="#" class="btn btn-green"><img src="assets/icons/save.png" alt="">บันทึก</a>
+        <a href="apply-step4.html" class="btn btn-orange">ถัดไป: สมัครเข้าศึกษา &rarr;</a>
+      </div>
+    </div>
+  </div>
+</main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col" style="max-width:260px;">
+        <div class="footer-brand">
+          <img src="assets/icons/logo.png" alt="KMUTNB" style="height:30px;width:auto;">
+        </div>
+        <h4 style="margin-top:14px;">รับสมัครนักศึกษา</h4>
+        <span>คณะเทคโนโลยีและการจัดการอุตสาหกรรม<br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</span>
+        <div class="footer-social">
+          <a href="#" title="Facebook"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+          <a href="#" title="Instagram"><img src="assets/icons/instagram.jpg" alt="Instagram"></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>ผู้สมัคร</h4>
+        <a href="programs.html">หลักสูตรที่เปิดรับ</a>
+        <a href="notifications.html">ติดตามสถานะการสมัคร</a>
+        <a href="contact.html">ติดต่อสอบถาม</a>
+      </div>
+      <div class="footer-col">
+        <h4>ติดต่อ</h4>
+        <span>โทร. 037-217-300</span>
+        <span>contact-prachinburi@op.kmutnb.ac.th</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>เว็บไซต์ระบบรับสมัครนักศึกษา (Mockup) &middot; ข้อมูลจำลองเพื่อการสาธิตเท่านั้น &middot; <a href="#" style="color:#c7c7c7;text-decoration:underline;">นโยบายความเป็นส่วนตัว</a></span>
+      <span>Copyright &copy; 2026 King Mongkut's University of Technology North Bangkok</span>
+    </div>
+  </footer>
+</body>
+</html>

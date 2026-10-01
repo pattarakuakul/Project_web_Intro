@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สมัครเรียน - ข้อมูลส่วนตัว | KMUTNB ปราจีนบุรี</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="หน้าแรก KMUTNB">
+        <img class="brand-logo" src="assets/icons/logo.png" alt="KMUTNB">
+      </a>
+      <nav class="top-nav">
+        <a href="index.html">หน้าแรก</a><a href="programs.html">หลักสูตร</a><a href="notifications.html" class="current">ใบสมัครของฉัน</a><a href="contact.html">ติดต่อเรา</a>
+      </nav>
+      <div class="top-actions">
+        <a href="favorites.html" class="top-action" title="รายการที่สนใจ">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="#fff" aria-hidden="true"><path d="M6 2h12a1 1 0 0 1 1 1v18.2a.8.8 0 0 1-1.24.67L12 17.5l-5.76 4.37A.8.8 0 0 1 5 21.2V3a1 1 0 0 1 1-1z"/></svg>
+          
+          <span class="lbl">รายการที่สนใจ</span>
+        </a>
+        <a href="notifications.html" class="top-action" title="การแจ้งเตือน">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="#fff" aria-hidden="true"><path d="M12 2a6 6 0 0 0-6 6v3.1c0 .56-.22 1.1-.62 1.5L4 14v1h16v-1l-1.38-1.4a2.12 2.12 0 0 1-.62-1.5V8a6 6 0 0 0-6-6zm0 20a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22z"/></svg>
+          
+          <span class="lbl">การแจ้งเตือน</span>
+        </a>
+        
+      <div class="user-chip" style="cursor:default;">
+        <img src="assets/icons/avatar.jpg" alt="">
+        <span class="lbl">สมชาย ใจดี</span>
+      </div>
+      <a href="index.html" class="btn btn-ghost-orange" style="padding:7px 16px;font-size:12.5px;">ออกจากระบบ</a>
+      </div>
+    </div>
+  </header>
+<main>
+  <div class="form-shell" style="padding-bottom:0;">
+    <h1 class="apply-title">สมัครเรียน</h1>
+    <div class="program-chip"><span class="chip-code">INE</span><span>สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INE) หลักสูตรส่งเสริมภาษาอังกฤษ</span></div>
+  </div>
+  <div class="wizard-steps">
+      <div class="wizard-step active">
+        <div class="dot">1</div>
+        <span>ข้อมูลส่วนตัว</span>
+      </div>
+      <div class="wizard-step ">
+        <div class="dot">2</div>
+        <span>ช่องทางการติดต่อ</span>
+      </div>
+      <div class="wizard-step ">
+        <div class="dot">3</div>
+        <span>ข้อมูลการศึกษา</span>
+      </div>
+      <div class="wizard-step ">
+        <div class="dot">4</div>
+        <span>สมัครเข้าศึกษา</span>
+      </div>
+    </div>
+    <div class="wizard-bar"></div>
+  <div class="form-shell">
+    <div class="info-callout">
+      <span class="ic-dot">i</span>
+      <div>
+        <b>กรอกข้อมูลผู้สมัครครั้งแรกครั้งเดียว</b>
+        <span>ครั้งถัดไปที่สมัครหลักสูตรอื่น ระบบจะดึงข้อมูลนี้ไปใช้ "ลดขั้นตอน" ให้เอง</span>
+      </div>
+    </div>
+    <div class="form-panel step-panel">
+      <h2 class="panel-heading">ข้อมูลส่วนตัว</h2>
+      <p class="panel-subtext">ใช้ข้อมูลตามบัตรประชาชน &middot; ช่องที่มี <span class="req">*</span> ต้องกรอก</p>
+      <div style="display:flex;gap:26px;flex-wrap:wrap;">
+        <div class="avatar-upload">
+          <label class="circle" for="photoInput">
+            <img class="icon" src="assets/icons/upload.png" alt="">
+          </label>
+          <input type="file" id="photoInput" accept="image/*" style="display:none;">
+          <label for="photoInput" class="btn btn-outline" style="padding:6px 18px;font-size:12.5px;">เปลี่ยนรูป</label>
+          <span>รูปถ่ายหน้าตรง ชัดเจน <span style="color:#e0483c">*</span><br>อัปโหลดไม่เกิน 10 MB</span>
+        </div>
+        <div style="flex:1;min-width:260px;">
+          <div class="form-grid">
+            <div class="f-group full">
+              <label>เลขบัตรประชาชน <span class="req">*</span></label>
+              <input type="text" maxlength="13" placeholder="เลขบัตรประชาชน 13 หลัก">
+            </div>
+            <div class="f-group">
+              <label>คำนำหน้า <span class="req">*</span></label>
+              <select><option value="">เลือก</option><option>นาย</option><option>นาง</option><option>นางสาว</option></select>
+            </div>
+            <div class="f-group">
+              <label>ชื่อ <span class="req">*</span></label>
+              <input type="text">
+            </div>
+            <div class="f-group full">
+              <label>นามสกุล <span class="req">*</span></label>
+              <input type="text">
+            </div>
+            <div class="f-group">
+              <label>ชื่อ (ภาษาอังกฤษ) <span class="req">*</span></label>
+              <input type="text">
+            </div>
+            <div class="f-group">
+              <label>นามสกุล (ภาษาอังกฤษ) <span class="req">*</span></label>
+              <input type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-grid" style="margin-top:18px;">
+        <div class="f-group">
+          <label>เพศ</label>
+          <select><option value="">เลือก</option><option>ชาย</option><option>หญิง</option><option>ไม่ระบุ</option></select>
+        </div>
+        <div class="f-group">
+          <label>วันเดือนปีเกิด <span class="req">*</span></label>
+          <input type="date">
+        </div>
+        <div class="f-group">
+          <label>หมายเลขบัตรประชาชน (ตัวเลข 13 หลัก) <span class="req">*</span></label>
+          <input type="text" maxlength="13">
+        </div>
+        <div class="f-group">
+          <label>ความพิการ</label>
+          <select><option value="">ไม่มี</option><option>มี (โปรดระบุในหมายเหตุ)</option></select>
+        </div>
+      </div>
+    </div>
+    <div class="dotted-divider"></div>
+    <div class="form-actions">
+      <a href="major-ine.html" class="btn btn-outline">&larr; กลับไปหน้าหลักสูตร</a>
+      <div style="display:flex;gap:12px;">
+        <a href="#" class="btn btn-green"><img src="assets/icons/save.png" alt="">บันทึก</a>
+        <a href="apply-step2.html" class="btn btn-orange">ถัดไป: ช่องทางการติดต่อ &rarr;</a>
+      </div>
+    </div>
+  </div>
+</main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col" style="max-width:260px;">
+        <div class="footer-brand">
+          <img src="assets/icons/logo.png" alt="KMUTNB" style="height:30px;width:auto;">
+        </div>
+        <h4 style="margin-top:14px;">รับสมัครนักศึกษา</h4>
+        <span>คณะเทคโนโลยีและการจัดการอุตสาหกรรม<br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</span>
+        <div class="footer-social">
+          <a href="#" title="Facebook"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+          <a href="#" title="Instagram"><img src="assets/icons/instagram.jpg" alt="Instagram"></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>ผู้สมัคร</h4>
+        <a href="programs.html">หลักสูตรที่เปิดรับ</a>
+        <a href="notifications.html">ติดตามสถานะการสมัคร</a>
+        <a href="contact.html">ติดต่อสอบถาม</a>
+      </div>
+      <div class="footer-col">
+        <h4>ติดต่อ</h4>
+        <span>โทร. 037-217-300</span>
+        <span>contact-prachinburi@op.kmutnb.ac.th</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>เว็บไซต์ระบบรับสมัครนักศึกษา (Mockup) &middot; ข้อมูลจำลองเพื่อการสาธิตเท่านั้น &middot; <a href="#" style="color:#c7c7c7;text-decoration:underline;">นโยบายความเป็นส่วนตัว</a></span>
+      <span>Copyright &copy; 2026 King Mongkut's University of Technology North Bangkok</span>
+    </div>
+  </footer>
+</body>
+</html>
